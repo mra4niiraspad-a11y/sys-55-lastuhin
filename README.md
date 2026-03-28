@@ -50,7 +50,8 @@ backend web_servers
 
 
 ```
-([Балансировка при запросах](https://psv4.userapi.com/s/v1/d2/uw4LmdtK4dQ7yxJh0MhWhNALOWcL7tpsc0WYBY1dhui1XokYoZIhHysEZ02zrCy_-Z9QmxIcvwSCrqymzqcaydm3qlPRhrkxP4UhlhTSaKUGmkcwYbhqEaNIwB8utmNWczkE13Eyhxaj/S.png))
+
+![Балансировка]([https://raw.githubusercontent.com/.../имя_файла.png](https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/main/S.png))
 ([Сервер haproxy](https://psv4.userapi.com/s/v1/d2/1jq4Ziex9RT1CCl9Oe1yL8IpebfOBXkHLnE3xV3M0H632aGFMpkpRdKi7eDxLWbCA7TM7__1F9y8NituMOGLkgdwHjq4ZYLQmq9v8mXq6pohMAtzvlGCBrguR2nlnal5tnlQre5KJxIj/d.png))
 
 ---
