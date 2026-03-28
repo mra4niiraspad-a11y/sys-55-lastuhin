@@ -11,38 +11,43 @@
 
 ```
 global
+    log /dev/log local0
+    log /dev/log local1 notice
+    chroot /var/lib/haproxy
+    stats socket /run/haproxy/admin.sock mode 660 level admin expose-fd listeners
+    stats timeout 30s
+    user haproxy
+    group haproxy
     daemon
-    maxconn 4000
-    log 127.0.0.1 local0
-    stats socket /run/haproxy/stats mode 660 level admin
 
 defaults
-    mode http
-    timeout connect 5s
-    timeout client 30s
-    timeout server 30s
     log global
+    mode http
     option httplog
-
-
-frontend web_tcp
-    bind 127.0.0.1:8080
-    default_backend app_servers
-
-backend app_servers
-    balance roundrobin
-    option httpchk GET / HTTP/1.1
-    server s1 127.0.0.1:9001 check
-    server s2 127.0.0.1:9002 check
+    option dontlognull
+    timeout connect 5000
+    timeout client 50000
+    timeout server 50000
 
 listen stats
-    bind 127.0.0.1:8889
+    bind :8889
     mode http
     stats enable
-    stats uri /
+    stats uri /stats
+    stats refresh 5s
     stats realm Haproxy\ Statistics
     stats auth admin:password
-    stats refresh 5s
+
+frontend web_frontend
+    bind :8080
+    default_backend web_servers
+
+backend web_servers
+    balance roundrobin
+    option httpchk GET /
+    server s1 127.0.0.1:8888 check
+    server s2 127.0.0.1:9999 check
+
 
 ```
 ([Балансировка при запросах](https://psv4.userapi.com/s/v1/d2/uw4LmdtK4dQ7yxJh0MhWhNALOWcL7tpsc0WYBY1dhui1XokYoZIhHysEZ02zrCy_-Z9QmxIcvwSCrqymzqcaydm3qlPRhrkxP4UhlhTSaKUGmkcwYbhqEaNIwB8utmNWczkE13Eyhxaj/S.png))
@@ -59,49 +64,51 @@ HAproxy должен балансировать только тот http-тра�
 
 ```
 global
+    log /dev/log local0
+    log /dev/log local1 notice
+    chroot /var/lib/haproxy
+    stats socket /run/haproxy/admin.sock mode 660 level admin expose-fd listeners
+    stats timeout 30s
+    user haproxy
+    group haproxy
     daemon
-    maxconn 8000
-    log 127.0.0.1 local0 info
-    stats socket /run/haproxy/stats mode 660 level admin
-    spread-checks 3
 
 defaults
-    mode http
-    option redispatch 1
-    option forwardfor
-    retries 3
-    timeout connect 5000ms
-    timeout client 50000ms
-    timeout server 50000ms
     log global
+    mode http
     option httplog
     option dontlognull
-
-frontend web_tcp
-    bind 127.0.0.1:8080
-    option tcplog
-    default_backend app_servers
-
-backend app_servers
-    balance roundrobin
-    option http-server-close
-    option httpchk HEAD / HTTP/1.1\r\nHost:\ localhost
-    http-check expect status 200
-    default-server inter 3s fall 2 rise 2
-    server s1 127.0.0.1:9001 weight 1 check port 9001
-    server s2 127.0.0.1:9002 weight 1 check port 9002
+    timeout connect 5000
+    timeout client 50000
+    timeout server 50000
 
 listen stats
-    bind 127.0.0.1:8889
+    bind :8889
     mode http
     stats enable
     stats uri /stats
-    stats realm HAProxy\ Statistics
-    stats show-legends
-    stats hide-version
-    stats admin if TRUE
-    stats refresh 2s
+    stats refresh 5s
+    stats realm Haproxy\ Statistics
     stats auth admin:password
+
+frontend web_frontend
+    bind :80
+    acl host_example hdr(host) -i example.local
+    use_backend weighted_servers if host_example
+    default_backend no_balancing
+
+backend weighted_servers
+    mode http
+    balance weight roundrobin
+    option httpchk GET /
+    server s1 127.0.0.1:8888 weight 2 check
+    server s2 127.0.0.1:9999 weight 3 check
+    server s3 127.0.0.1:7777 weight 4 check
+
+backend no_balancing
+    mode http
+    errorfile 503 /etc/haproxy/errors/503.http
+
 
 ```
 ([Балансировка](https://psv4.userapi.com/s/v1/d2/Lg0piQBH26HJxeiJQA2u4b0M-WI120tJMZL-PqOsVZ-f9DXgHCSj-u6UZ9_cHi06wNZlm-wJsMrIdejW2qMzyaZizJdzwHkzyZZ5leFGQ6YAAmVueu-iGD_iRW02MrSgkDM-plKqItru/B.png))
