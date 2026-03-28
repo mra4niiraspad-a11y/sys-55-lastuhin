@@ -52,7 +52,7 @@ backend web_servers
 ```
 
 ![Балансировка](S.png)
-([Сервер haproxy](https://psv4.userapi.com/s/v1/d2/1jq4Ziex9RT1CCl9Oe1yL8IpebfOBXkHLnE3xV3M0H632aGFMpkpRdKi7eDxLWbCA7TM7__1F9y8NituMOGLkgdwHjq4ZYLQmq9v8mXq6pohMAtzvlGCBrguR2nlnal5tnlQre5KJxIj/d.png))
+![Балансировка](d.png)
 
 ---
 
@@ -112,8 +112,8 @@ backend no_balancing
 
 
 ```
-([Балансировка](https://psv4.userapi.com/s/v1/d2/Lg0piQBH26HJxeiJQA2u4b0M-WI120tJMZL-PqOsVZ-f9DXgHCSj-u6UZ9_cHi06wNZlm-wJsMrIdejW2qMzyaZizJdzwHkzyZZ5leFGQ6YAAmVueu-iGD_iRW02MrSgkDM-plKqItru/B.png))
-([Сервер статистики](https://psv4.userapi.com/s/v1/d2/GDLSboDnbpTb24bOTyAAXUzkBjpBBJUtib2k33juen5afdgccIBu9UmqsLCeVf5L6anGQBD8NcglAuOLYQTD-rFsPkoeyiLZZYGvZSHXyKy_6Lh_ipch8O48aeKBd4U9NftTyBvpEKzC/V.png))
-([Ошибка без настроек](https://psv4.userapi.com/s/v1/d2/Yw-YXf2LdWJLEiw46iJfv5nv7VFyzMLalY9DZnZCCasFUMaxlvt-ODsXS9Z9FKmQ2MfqEhoW8B6eyFFynJo2TUg5har0rAHOnmYAzs2aWN4S80Va4wA1xDQPhHHfzQO8v9DQhXlPCTnh/A.png))
+![Балансировка](B.png)
+![Сервер статистики](V.png)
+![Ошибка без настроек](A.png)
 ---
 
