@@ -8,12 +8,7 @@
 На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy.
 
 
-
-```
-<a href="https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/main/configs/haproxy-Task1" style="display: inline-block; padding: 10px 20px; background: #0366d6; color: white; text-decoration: none; border-radius: 5px;">Открыть конфигурацию HAProxy</a>
-
-
-```
+[Конфигурация HAProxy для задачи 1](https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/main/configs/haproxy-Task1)
 
 ![Балансировка](img/S.png)
 ![Балансировка](img/d.png)
