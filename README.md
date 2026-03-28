@@ -10,45 +10,7 @@
 
 
 ```
-global
-    log /dev/log local0
-    log /dev/log local1 notice
-    chroot /var/lib/haproxy
-    stats socket /run/haproxy/admin.sock mode 660 level admin expose-fd listeners
-    stats timeout 30s
-    user haproxy
-    group haproxy
-    daemon
-
-defaults
-    log global
-    mode http
-    option httplog
-    option dontlognull
-    timeout connect 5000
-    timeout client 50000
-    timeout server 50000
-
-listen stats
-    bind :8889
-    mode http
-    stats enable
-    stats uri /stats
-    stats refresh 5s
-    stats realm Haproxy\ Statistics
-    stats auth admin:password
-
-frontend web_frontend
-    bind :8080
-    default_backend web_servers
-
-backend web_servers
-    balance roundrobin
-    option httpchk GET /
-    server s1 127.0.0.1:8888 check
-    server s2 127.0.0.1:9999 check
-
-
+configs/haproxy-Task1
 ```
 
 ![Балансировка](S.png)
