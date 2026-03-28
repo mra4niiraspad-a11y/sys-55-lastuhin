@@ -10,7 +10,8 @@
 
 
 ```
-[Конфигурация HAProxy для задачи 1](https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/main/configs/haproxy-Task1)
+<a href="https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/main/configs/haproxy-Task1" style="display: inline-block; padding: 10px 20px; background: #0366d6; color: white; text-decoration: none; border-radius: 5px;">Открыть конфигурацию HAProxy</a>
+
 
 ```
 
