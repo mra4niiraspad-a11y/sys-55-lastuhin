@@ -10,7 +10,7 @@
 
 
 ```
-configs/haproxy-Task1
+[Конфигурация HAProxy для задачи 1](configs/haproxy-Task1)
 ```
 
 ![Балансировка](img/S.png)
