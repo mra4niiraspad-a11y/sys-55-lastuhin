@@ -10,7 +10,8 @@
 
 
 ```
-[Конфигурация HAProxy](https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/edit//main/configs/haproxy-Task1)
+[Конфигурация HAProxy для задачи 1](https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/main/configs/haproxy-Task1)
+
 ```
 
 ![Балансировка](img/S.png)
