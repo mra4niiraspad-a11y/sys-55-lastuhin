@@ -9,6 +9,9 @@
 
 ---
 rsync -av --exclude=".*" --checksum /home/last/ /tmp/backup/
+
+
+
 ---
 
 ![Исполнение команды](img/1.png)
