@@ -22,19 +22,19 @@
 Задание 2. Memcached
 Установите и запустите memcached.
 
-[VirtualBox_ubu_27_04_2026_12_39_26.png](https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/f7670eab3c6a8574f4261206ae5e0d7eeae68926/VirtualBox_ubu_27_04_2026_12_39_26.png)
+![1.png](https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/f7670eab3c6a8574f4261206ae5e0d7eeae68926/VirtualBox_ubu_27_04_2026_12_39_26.png)
 
 ---
 
 Задание 3. Удаление по TTL в Memcached
 Запишите в memcached несколько ключей с любыми именами и значениями, для которых выставлен TTL 5.
 
-https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/2d9899c5f2ce44c6008bc7f272d984c05d052307/VirtualBox_ubu_27_04_2026_13_11_40.png
+![2.png](https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/2d9899c5f2ce44c6008bc7f272d984c05d052307/VirtualBox_ubu_27_04_2026_13_11_40.png)
 
 --- 
 
 Задание 4. Запись данных в Redis
 Запишите в Redis несколько ключей с любыми именами и значениями.
 
-https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/6d5963ef8cd69c9757ba56046938178fe002d500/VirtualBox_ubu_27_04_2026_13_22_09.png
+![3.png](https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/6d5963ef8cd69c9757ba56046938178fe002d500/VirtualBox_ubu_27_04_2026_13_22_09.png)
 ---
