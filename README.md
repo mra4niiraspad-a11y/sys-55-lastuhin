@@ -1,40 +1,26 @@
-# Домашнее задание к занятию "Кеширование Redis/memcached" - `Ластухин Никита`
+# Домашнее задание к занятию "ELK»" - `Ластухин Никита`
 
 
 ---
 
-Задание 1. Кеширование
-Приведите примеры проблем, которые может решить кеширование.
-
-Примеры проблем, которые может решить кеширование:
-
-1) Замедленный доступ к данным (из‑за частых обращений к БД или внешним сервисам);
-
-2) Высокая нагрузка на сервер/БД из‑за повторяющихся запросов;
-
-3) Задержки при отрисовке веб‑страниц с динамическим контентом;
-
-4) Избыточные сетевые запросы к API или другим сервисам;
-
-5) Медленная работа приложений при обращении к ресурсоёмким вычислениям.
-
+Задание 1. Elasticsearch
+Установите и запустите Elasticsearch, после чего поменяйте параметр cluster_name на случайный.
+![1.png](https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/9c60744ad866e2035299b677f2ce194ceb1a3c49/VirtualBox_ubu_04_05_2026_23_18_16.png)
 ---
-Задание 2. Memcached
-Установите и запустите memcached.
-
-![1.png](https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/f7670eab3c6a8574f4261206ae5e0d7eeae68926/VirtualBox_ubu_27_04_2026_12_39_26.png)
-
+Задание 2. Kibana
+Установите и запустите Kibana.
+![2.png](https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/9c60744ad866e2035299b677f2ce194ceb1a3c49/VirtualBox_ubu_04_05_2026_23_19_43.png)
 ---
 
-Задание 3. Удаление по TTL в Memcached
-Запишите в memcached несколько ключей с любыми именами и значениями, для которых выставлен TTL 5.
+Задание 3. Logstash
+Установите и запустите Logstash и Nginx. С помощью Logstash отправьте access-лог Nginx в Elasticsearch.
 
-![2.png](https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/2d9899c5f2ce44c6008bc7f272d984c05d052307/VirtualBox_ubu_27_04_2026_13_11_40.png)
+![3.png](https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/9c60744ad866e2035299b677f2ce194ceb1a3c49/VirtualBox_ubu_05_05_2026_00_10_39.png)
 
 --- 
 
-Задание 4. Запись данных в Redis
-Запишите в Redis несколько ключей с любыми именами и значениями.
+Задание 4. Filebeat.
+Установите и запустите Filebeat. Переключите поставку логов Nginx с Logstash на Filebeat.
 
-![3.png](https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/6d5963ef8cd69c9757ba56046938178fe002d500/VirtualBox_ubu_27_04_2026_13_22_09.png)
+![4.png](https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/9c60744ad866e2035299b677f2ce194ceb1a3c49/11-3-4-3.png)
 ---
