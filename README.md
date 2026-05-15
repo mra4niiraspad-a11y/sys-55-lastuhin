@@ -35,7 +35,7 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 Название таблицы | Название первичного ключа
 customer         | customer_id
 
-![5.png]([https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/b1585cc9243c2bb0a4c2ef0b241f882caf805875/4.png](https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/c1fcb7355d6b8b131f04aa45384f6ff28b327c5e/5%20(1).jpg))
+![5.png](https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/c1fcb7355d6b8b131f04aa45384f6ff28b327c5e/5%20(1).jpg)
 ---
 
 
