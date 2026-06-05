@@ -20,6 +20,7 @@ pg_dump -Fc -v -d "postgresql://role_name:password@host/database?sslmode=require
 Восстановление:
 
 pg_restore -v -d "postgresql://role_name:password@host/database" mydatabase.bak
+
 ---
 Задание 3. MySQL
 
