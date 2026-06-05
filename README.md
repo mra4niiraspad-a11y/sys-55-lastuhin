@@ -16,6 +16,7 @@
 2.1. Резервирование:
 
 pg_dump -Fc -v -d "postgresql://role_name:password@host/database?sslmode=require" -f mydatabase.bak
+
 Восстановление:
 
 pg_restore -v -d "postgresql://role_name:password@host/database" mydatabase.bak
