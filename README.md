@@ -56,7 +56,7 @@ nfs_acl (порт 2049/tcp, версия 3, RPC #100227) — служба NFS (N
 
 ---
 Вот сеансы сканирования в Wireshark.
-https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/656f8c52978d7c7cf0d49fac9c58258fa927586f/FIN.pcapng
+https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/656f8c52978d7c7cf0d49fac9c58258fa927586f/FIN.pcapng 
 https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/656f8c52978d7c7cf0d49fac9c58258fa927586f/SYN.pcapng
 https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/656f8c52978d7c7cf0d49fac9c58258fa927586f/UDP.pcapng
 https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/656f8c52978d7c7cf0d49fac9c58258fa927586f/Xmas.pcapng
