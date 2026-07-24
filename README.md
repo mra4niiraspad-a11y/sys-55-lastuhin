@@ -5,7 +5,8 @@
   ![Да](https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/fda5ad212b16210983fc51ea324d94746479b204/n-EBnos8S1GtqrkvAOX_YgSwaj6UPUja0USL2RwpS0bGKn5R3KZwBM3wvgBPc78LQ4beEsrBO6kWa5CKi0m8GSXe.jpg) 
 ---
 2. Нужна ли вам справка об обучении после сдачи дипломной работы? Справка выдаётся всем студентам, в том числе тем, у кого нет диплома о высшем или среднем специальном образовании.
- Да, диплом о переподготовке.
+ 
+ 2) Да, диплом о переподготовке.
 ---
 3. Выполнен ли вами необходимый минимум заданий на каждом модуле профессии для допуска к дипломной работе?
     ![Да](https://github.com/mra4niiraspad-a11y/sys-55-lastuhin/blob/fda5ad212b16210983fc51ea324d94746479b204/38EyG1aoti9jdv89T5g_ZwTo1lRY8xgY0JQqxT6lhKVxJFcusOu3EjlqV_SSA53y5oCYzWA3cMMRLuocX-02K39X.jpg) 
